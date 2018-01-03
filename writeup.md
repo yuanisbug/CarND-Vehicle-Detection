@@ -61,7 +61,7 @@ I trained a linear SVM model `svc.p`.
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
+I changed the parameter `cells_per_step = 1` and got a better image:
 
 ![alt text][image3]
 
@@ -102,5 +102,5 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+I changed the parameters in finding cars. Got a better result. However, resulting in slower the computing. May I know what commonly implemented in real-time computer vision in autonomous cars. As far as I know, robotics compressed image need to convert and processed by the host computer. It is slow when I am working on my PC. This part I think I need to improve my understanding by doing some fusion job with our lab's automotive radar. Thank you in advance.
 
